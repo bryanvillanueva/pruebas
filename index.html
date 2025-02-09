@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heladería Colorida</title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f2f2f2;
+    }
+    header {
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav {
+      background: #ff6f61;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    
+    /* Slider */
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      max-height: 400px;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { margin-left: 0; }
+      20% { margin-left: 0; }
+      25% { margin-left: -100%; }
+      45% { margin-left: -100%; }
+      50% { margin-left: -200%; }
+      70% { margin-left: -200%; }
+      75% { margin-left: -100%; }
+      95% { margin-left: -100%; }
+      100% { margin-left: 0; }
+    }
+    
+    /* Secciones */
+    section {
+      padding: 40px 20px;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .seccion-productos, .seccion-contacto {
+      background: #f7c5cc;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    .seccion-contacto {
+      background: #dcedc1;
+    }
+    
+    /* Footer */
+    footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header id="inicio">
+    <h1>¡Bienvenidos a Heladería Colorida!</h1>
+    <p>Los mejores helados para endulzar tus momentos.</p>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="https://www.elmejornido.com/sites/g/files/jgfbjl316/files/styles/facebook_share/public/recipe-thumbnail/152502-204d4d0826008d3f1911e1e49249a8d0_copa_de_fresas_con_crema.jpg?itok=6nilpTd3" alt="Helado de Vainilla">
+      <img src="https://149562642.v2.pressablecdn.com/wp-content/uploads/helados-en-republica-dominicana-750x536.jpg" alt="Helado de Chocolate">
+      <img src="https://www.elespectador.com/resizer/v2/FUKFCVSIZVAJJMRDP2LT2SQ6GA.jpg?auth=c9f609ab007f7f047592b7fd64b4a3f5f6fae60338c1990ca2f6a928103a776b&width=920&height=613&smart=true&quality=60" alt="Helado de Fresa">
+    </div>
+  </div>
+
+  <!-- Sección de Productos -->
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="seccion-productos">
+      <p>En Heladería Colorida contamos con una gran variedad de sabores y combinaciones: desde los clásicos como vainilla y chocolate, hasta creaciones únicas y sorprendentes. ¡Ven y prueba nuestros deliciosos helados!</p>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Nosotros -->
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+      Somos una heladería apasionada por la innovación y la calidad. Nuestro equipo se dedica a crear experiencias inolvidables, utilizando ingredientes frescos y técnicas artesanales para deleitar a nuestros clientes.
+    </p>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="seccion-contacto">
+      <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad de los Helados</p>
+      <p><strong>Teléfono:</strong> 123-456-7890</p>
+      <p><strong>Email:</strong> contacto@heladeriacolorida.com</p>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Heladería Colorida. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
